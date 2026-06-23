@@ -26,7 +26,7 @@ let currentId = null;
 
 function getStudents() {
 
-    fetchStudents().then(res => renderStudents(res))
+    fetchStudents().then(res => renderStudents(res.students))
 
 }
 

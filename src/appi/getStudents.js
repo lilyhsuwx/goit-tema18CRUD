@@ -1,3 +1,6 @@
+const BASE_URL = "https://YOUR-RENDER-URL.onrender.com";
+
 export function fetchStudents() {
-    return fetch("http://localhost:3000/students").then(res => res.json());;
+  return fetch(`${BASE_URL}/students`)
+    .then(res => res.json());
 }
