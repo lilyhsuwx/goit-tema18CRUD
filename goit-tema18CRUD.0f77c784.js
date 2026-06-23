@@ -735,7 +735,7 @@ const addStudentForm = document.getElementById("add-student-form");
 let currentId = null;
 // Функція для отримання всіх студентів
 function getStudents() {
-    (0, _getStudentsJs.fetchStudents)().then((res)=>renderStudents(res));
+    (0, _getStudentsJs.fetchStudents)().then((res)=>renderStudents(res.students));
 }
 // Функція для відображення студентів у таблиці
 function renderStudents(students) {
@@ -808,8 +808,9 @@ document.addEventListener("click", (e)=>{
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchStudents", ()=>fetchStudents);
+const BASE_URL = "https://YOUR-RENDER-URL.onrender.com";
 function fetchStudents() {
-    return fetch("http://localhost:3000/students").then((res)=>res.json());
+    return fetch(`${BASE_URL}/students`).then((res)=>res.json());
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
