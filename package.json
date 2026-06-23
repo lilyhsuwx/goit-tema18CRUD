@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/lilyhsuwx/goit-tema18CRUD/issues"
   },
-  "homepage": "https://github.com/lilyhsuwx/goit-tema18CRUD#readme",
+  "homepage": "https://lilyhsuwx.github.io/goit-tema18CRUD/",
   "devDependencies": {
     "parcel": "^2.16.4"
   },
